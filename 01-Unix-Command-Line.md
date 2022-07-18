@@ -18,8 +18,6 @@ Ketika kita memulai program ***shell*** maka anda akan melihat simbol dollar ($)
 
 Di bawah ini adalah struktur **command** di dalam **shell** :
 
-<img src="../assets/LinuxCommand.png" style="zoom:80%;" />
-
 Perintah (**Command**) pertama yang akan kita pelajari adalah **echo**, silahkan eksekusi perintah di bawah ini : 
 
 ```bash
@@ -33,15 +31,11 @@ hello world
 
 **Command** adalah perintah yang akan kita berikan agar dieksekusi oleh **shell**. Untuk menguji perintah pertama kita, ketik perintah (**Command**) pada shell prompt **whoami** kemudian tekan Enter. 
 
-<img src="../assets/LinuxCommand1.png" style="zoom:90%;" />
-
 Perintah (**Command**) ini digunakan untuk mencetak nama pengguna sistem operasi **linux** yang sedang menggunakan **shell**. **Linux command** bersifat **case sensitive**.
 
 Secara konvensi penulisan perintah (**Command**) ditulis menggunakan huruf kecil (**lowercase**). Selanjutnya kita akan mencoba perintah dasar yang paling sering digunakan di dalam **shell**.
 
 ### Present Working Directory
-
-<img src="../assets/LinuxCommand4.png" style="zoom:90%;" />
 
 Untuk mengetahui saat ini kita berada di posisi **directory** yang mana eksekusi perintah (**command**) **pwd** kemudian tekan enter.
 
@@ -53,8 +47,6 @@ Untuk mengetahui saat ini kita berada di posisi **directory** yang mana eksekusi
 Kita akan mencoba untuk pindah **directory** menuju **/home directory** menggunakan perintah (**command**) **cd**.
 
 ### Change Directory
-
-<img src="../assets/LinuxCommand5.png" style="zoom:90%;" />
 
 Untuk berpindah **directory** eksekusi perintah **cd /home** kemudian tekan enter.
 
@@ -90,8 +82,6 @@ etc   lib             mnt         run   sys   vmlinuz
 ```
 
 Perintah ini akan menampilkan daftar file (*lists files*) di dalam suatu *directory*.
-
-<img src="../assets/LinuxFilesystem.png" style="zoom:90%;" />
 
 Jika kita ubah kedalam tampilan visual kita bisa melihat terdapat banyak sekali sub-directory di dalam root directory. Kita akan membahas masing-masing **directory** di bab khusus.
 
@@ -144,11 +134,7 @@ Untuk melihat **hidden file** kita akan mempelajarinya di halaman selanjutnya, u
 
 Setelah mempelajari **Command** (Perintah) kita akan mempelajari **options** atau **command-line options** (Opsi Perintah).
 
-<img src="../assets/Options.png" style="zoom:90%;" />
-
 Opsi perintah atau biasa disebut **command-line options** digunakan agar perintah (**Command**) yang dieksekusi memiliki karakteristik tertentu. Untuk memberikan karakteristik perintah kita perlu menggunakan **switches** atau **flags**. 
-
-<img src="../assets/LinuxCommand2.png" style="zoom:90%;" />
 
 Pada perintah di atas kita menggunakan **switches -a** untuk melihat seluruh **file** termasuk **hidden file**. Perintah di atas akan memproduksi **output** berupa sekumpulan **hidden files** yang ditandai dengan ciri awalan nama **file** menggunakan simbol **dot (.)** :
 
@@ -162,15 +148,11 @@ Pada perintah di atas kita menggunakan **switches -a** untuk melihat seluruh **f
 
 Pada sistem operasi **linux** kita dapat membuat **file** yang terlihat (**visible file**) dan **file** yang tersembunyi (h**idden file**).
 
-<img src="../assets/File.png" style="zoom:90%;" />
-
 Perintah (**command**) **ls** digunakan untuk menampilkan daftar **file** yang terlihat saja (**visible file**) sementara **command ls** dengan **options -a** membantu kita melihat **hidden file**.
 
 ### Current Directory & Parrent Directory
 
 Simbol **dot (.)** artinya kita sedang berada dalam sebuah **directory** dan **double dot (..)** menandakan terdapat sebuah **parent directory**.
-
-<img src="../assets/LinuxFilesystem1.png" style="zoom:90%;" />
 
 ### Switches
 
@@ -184,8 +166,6 @@ Penggunaan **single dash** biasanya menggunakan 1 karakter tunggal sebagai singk
 - -h (**single dash**) atau **--human** (**two dash**)
 
 Kita dapat menggunakan lebih dari satu **options** dalam satu perintah (**Command**) untuk mendapatkan karakteristik lainnya. 
-
-<img src="../assets/LinuxCommand3.png" style="zoom:90%;" />
 
 Sebagai contoh eksekusi perintah (**Command**) ini **ls -alth** kemudian tekan enter :
 
@@ -214,17 +194,11 @@ Fungsi dari masing-masing **switch** :
 
 **Arguments** adalah informasi yang menjadi input untuk diproses sebuah **command**, sebelumnya kita sudah menggunakan **arguments**. Di bawah ini contoh **Command**, **Options** dan **Arguments** secara lengkap :
 
-<img src="../assets/LinuxCommand6.png" style="zoom:90%;" />
-
 Selanjutnya kita akan belajar bagaimana membuat sebuah **file**, mengubah **modification time**, dan **access time file** dengan memanfaatkan **command argument**.
 
 ### Touch Command
 
-<img src="../assets/LinuxCommand-Touch.png" style="zoom:90%;" />
-
 Setiap **file** yang kita ciptakan dalam sistem operasi **linux** memiliki **modification time** dan **access time**. Dengan perintah (**Command**) **touch** kita dapat membuat sebuah **file**, dan **argument** yang dibutuhkan adalah nama **file** yang akan di buat.
-
-<img src="../assets/LinuxCommand-Touch2.png" style="zoom:90%;" />
 
 Untuk membuat **file** eksekusi perintah (**Command**) dan **Argument** di bawah ini :
 
@@ -242,8 +216,6 @@ Perintah (**Command**) **touch** hanya dapat digunakan untuk membuat **file** sa
 ```
 
 Waktu pembuatan **file** yaitu pada **March 26 13:22**, untuk mengubah **modification time** tambahkan **options -m** pada perintah (**Command**) **touch**.
-
-<img src="../assets/LinuxCommand-Touch3.png" style="zoom:90%;" />
 
 Untuk mengubah **modification time** eksekusi perintah (**Command**) di bawah ini :
 
@@ -271,8 +243,6 @@ Jika sudah kita dapat memeriksanya dengan mengeksekusi perintah di bawah ini :
 
 Untuk mengubah waktu **access time** tambahkan **options -a** pada perintah (**Command**) **touch**.
 
-<img src="../assets/LinuxCommand-Touch4.png" style="zoom:90%;" />
-
 Untuk mengubah **access time** eksekusi perintah (**Command**) di bawah ini :
 
 ```bash
@@ -292,8 +262,6 @@ Jika sudah kita dapat memeriksanya dengan mengeksekusi perintah di bawah ini :
 
 ### Make Directory
 
-<img src="../assets/LinuxCommand-mkdir.png" style="zoom:90%;" />
-
 Untuk membuat sebuah directory eksekusi perintah (Command) di bawah ini :
 
 ```bash
@@ -308,8 +276,6 @@ maudy
 ```
 
 ### Make Multiple Directory
-
-<img src="../assets/LinuxCommand-mkdir2.png" style="zoom:90%;" />
 
 Kita juga dapat membuat 3 **directories** sekaligus dengan memanfaatkan **multi-arguments** seperti pada perintah (**Command**) di bawah ini :
 
@@ -327,8 +293,6 @@ ayunda faza maudy maudya
 Kini terdapat 4 **directories**.
 
 ### Make Subdirectory
-
-<img src="../assets/LinuxCommand-mkdir3.png" style="zoom:90%;" />
 
 Untuk membuat **sub-directory** kita dapat menggunakan **option -p**, pada **argument** kita membuat **full path /perahu/kertas/maudy**. Silahkan coba eksekusi perintah (**Command**) di bawah ini :
 
@@ -352,8 +316,6 @@ maudy
 Anda bisa mencobanya sebagai latihan.
 
 ### List Subdirectory
-
-<img src="../assets/LinuxCommand-ls.png" style="zoom:90%;" />
 
 Ada cara yang lebih mudah untuk mendapatkan informasi seluruh **sub-directory** dalam sebuah **directory**. Kita akan menggunakan perintah (**Command**) **ls** dengan **option -R** seperti di bawah ini : 
 
